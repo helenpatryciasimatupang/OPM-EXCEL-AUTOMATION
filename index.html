@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OPM Automation Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="card">
+<h1>OPM Automation Pro</h1>
+<p>Generate OPM Excel berbasis browser</p>
+
+<label>Template Excel</label>
+<input id="excel" type="file" accept=".xlsx">
+
+<label>ZIP Area</label>
+<input id="zip" type="file" accept=".zip">
+
+<button onclick="generate()">GENERATE</button>
+
+<div id="status">Ready</div>
+</div>
+</div>
+
+<script src="libs/jszip.min.js"></script>
+<script src="libs/xlsx.full.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
